@@ -1,7 +1,7 @@
 <app-orbit-list [satellites]="displayList"></app-orbit-list>
 <div class="search-form">
-    <input name="searchTerm" (keyup.enter)="search(searchTerm.value)">
-    <button (click)="search(searchTerm.value)">
+    <input #searchWord (keyup.enter)='search(searchWord.value)' type='text'>
+    <button (click)="search(searchWord.value)">
         Search
     </button>
 </div>
